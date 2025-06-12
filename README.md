@@ -1,14 +1,13 @@
-
 ![Cover Page](assets/cover_art.webp)
 
 > [!TIP]
-> Within any chapter, the table of contents can be accessed by pressing the unordered list icon ![octicon](assets/icon_unordered_list.svg) on top the right corner.
+> Within any chapter, the table of contents can be accessed by pressing the unordered list icon ![octicon](assets/icon_unordered_list.svg) in the top right corner.
 
 # First steps in learning Linux
 
-Have you thought about trying a Linux operating system without knowing where to start? Or already tried, but encountered challenges. Let this book guide your steps to learning Linux as I try to cover the essential vocabulary and concepts in a short and easy way.
+Have you thought about trying a Linux operating system without knowing where to start? Or already tried, but encountered challenges? Let this book guide your steps to learning Linux as I try to cover the essential vocabulary and concepts in a short and easy way.
 
-I strongly believe that knowledge of the past will contribute to a better understanding and acceptance of the design solutions. So let's start with [Chapter&nbsp;1](chapter/01-intro.md), which covers the history of Linux, including the views and opinions of a few selected individuals. Or choose another topic of interest below.
+I strongly believe that knowledge of the past will contribute to a better understanding and acceptance of the design solutions. So let's start with [Chapter&nbsp;1](chapter/01-intro.md), which covers the history of Linux, including the views and opinions of a few selected individuals. Alternatively, choose another topic of interest below.
 
 ----------------
 
@@ -151,12 +150,12 @@ I strongly believe that knowledge of the past will contribute to a better unders
 
 | Version | Date | Description |
 | ---:| --- | --- |
-| 1.0.4 | 25.05.2025 | [Second pdf edition updated, pending publication on Google Play GGKEY:QWCUZ4J1P8N](https://github.com/GitJit-max/learning-linux/releases/download/pdf/learning-linux.pdf) |
-| 1.0.4 | 25.05.2025 | Major updates to git edition |
-| 1.0.1 | 22.02.2025 | Minor updates to git edition |
-| 1.0 | 28.06.2024 | Second pdf edition |
-| 1.0 | 16.06.2024 | First github edition |
-| 0.9 | 13.04.2021 | First pdf edition |
+| 1.0.4 | 25.05.2025 | [Second PDF edition updated](https://github.com/GitJit-max/learning-linux/releases/download/pdf/learning-linux.pdf), pending publication on Google Play (GGKEY:QWCUZ4J1P8N) |
+| 1.0.4 | 25.05.2025 | Major updates to Git edition |
+| 1.0.1 | 22.02.2025 | Minor updates to Git edition |
+| 1.0 | 28.06.2024 | Second PDF edition |
+| 1.0 | 16.06.2024 | First GitHub edition |
+| 0.9 | 13.04.2021 | First PDF edition |
 
 ### Contribution guidelines
 
@@ -164,7 +163,7 @@ I would much appreciate any help with spell checking and proofreading.
 
 ### Petition
 
-It is difficult to gain visibility on the internet without a financial investment. In many cases, commercial content overshadows free content, regardless of quality. And many platforms don't tolerate unpaid advertising. I encourage you all to tell about this book to people you know and don't know. I hope that the word of mouth message will reach as many potential readers as possible.
+It is difficult to gain visibility on the internet without a financial investment. In many cases, commercial content overshadows free content, regardless of quality. And many platforms don't tolerate unpaid advertising. I encourage you all to tell people you know (and don't know) about this book. I hope that through this word of mouth it will reach as many potential readers as possible.
 
 ### License
 
