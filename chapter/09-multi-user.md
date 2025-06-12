@@ -1,7 +1,7 @@
 <!-- Start of auto generated content -->
 
 > [!TIP]
-> The table of contents can be accessed by pressing the unordered list icon ![octicon](../asset/octicon-list-unordered.svg) on top the right corner.
+> The table of contents can be accessed by pressing the unordered list icon ![octicon](../assets/icon_unordered_list.svg) on top the right corner.
 
 <p align="center">
   <a href="08-text-editors.md">&lt;&lt; Previous Chapter: 8 - Text editors</a>

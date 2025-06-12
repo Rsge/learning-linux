@@ -1,8 +1,8 @@
 
-![Cover Page](asset/Herr_Drosselmeyer.webp)
+![Cover Page](assets/cover_art.webp)
 
 > [!TIP]
-> Within any chapter, the table of contents can be accessed by pressing the unordered list icon ![octicon](asset/octicon-list-unordered.svg) on top the right corner.
+> Within any chapter, the table of contents can be accessed by pressing the unordered list icon ![octicon](assets/icon_unordered_list.svg) on top the right corner.
 
 # First steps in learning Linux
 
