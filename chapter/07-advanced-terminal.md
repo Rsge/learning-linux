@@ -1,7 +1,7 @@
 <!-- Start of auto generated content -->
 
 > [!TIP]
-> The table of contents can be accessed by pressing the unordered list icon ![octicon](../asset/octicon-list-unordered.svg) on top the right corner.
+> The table of contents can be accessed by pressing the unordered list icon ![octicon](../assets/icon_unordered_list.svg) on top the right corner.
 
 <p align="center">
   <a href="06-inter.md">&lt;&lt; Previous Chapter: 6 - Interoperability</a>
@@ -299,7 +299,7 @@ For more bells and whistles visit:
 
 Most terminal emulators understand the 8-bit color palette: [^wiki-ansi]
 
-![Terminal 8-bit color palette](../asset/colors.svg)
+![Terminal 8-bit color palette](../assets/colors.svg)
 
 [^wiki-ansi]: [Wikipedia - ANSI escape code, accessed 2024](https://en.wikipedia.org/wiki/ANSI_escape_code)
 
