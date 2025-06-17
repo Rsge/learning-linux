@@ -85,11 +85,12 @@ To make open source development economically sustainable, the choices come down 
 
 ## 1.5 Time-sharing
 
-Unices emerge from a 1960's to 1970's model of computing called **time-sharing**. That is allowing multiple users to interact concurrently with a single computer by sharing of a computing resource among multiple users at the same time. Time-sharing was born out of the realization that any single user would make inefficient use of a computer. Typically an individual enters bursts of information followed by long pauses. But a large group of users working at the same time would mean that the pauses of one user would be filled by the activity of others. With the rise of microcomputing in the early 1980s, time-sharing became less significant. Individual microprocessors were sufficiently inexpensive that a single person could have all the CPU time dedicated solely to their needs, even when idle. [^wikitime]
+Unices emerged from a 1960's to 1970's model of computing called **time-sharing**. That means allowing multiple users to interact concurrently with a single computer by sharing of a computing resource among multiple users at the same time. Time-sharing was born out of the realization that any single user would make inefficient use of a computer. Typically an individual enters bursts of information followed by long pauses. But a large group of users working at the same time would mean that the pauses of one user would be filled by the activity of others. With the rise of microcomputing in the early 1980s, time-sharing became less significant. Individual microprocessors were sufficiently inexpensive that a single person could have all the CPU time dedicated solely to their needs, even when idle. [^wikitime]
 
 [^wikitime]: [Wikipedia - Time-sharing, accessed 2021](https://en.wikipedia.org/wiki/Time-sharing)
 
-Internet brought the general concept of time-sharing back into popularity. Expensive corporate server farms costing millions can host thousands of customers all sharing the same common resources. As with the early serial terminals, web sites operate primarily in bursts of activity followed by periods of idle time. This bursting nature permits the service to be used by many customers at once, usually with no perceptible communication delays. [^wikitime] For public Internet servers the GNU/Linux family is generally counted as dominant (with 65 % market share), powering well over twice the number of hosts as Windows Server (with 25 % market share). [^server-marketshare] The supercomputer field is completely dominated by GNU/Linux. All 500 of the fastest supercomputers in the world run GNU/Linux. [^top500]
+The internet brought the general concept of time-sharing back into popularity. Expensive corporate server farms costing millions can host thousands of customers all sharing the same common resources. As with the early serial terminals, websites operate primarily in bursts of activity followed by periods of idle time. This bursting nature permits the service to be used by many customers at once, usually with no perceptible communication delays. [^wikitime] For public internet servers, the GNU/Linux family is generally counted as dominant (with a 65 % market share), powering well over twice the number of hosts as Windows Server (with a 25 % market share). [^server-marketshare]
+The supercomputer field is completely dominated by GNU/Linux. All 500 of the fastest supercomputers in the world run GNU/Linux. [^top500]
 
 [^server-marketshare]: [Fortune Business Insights - Server Operating System Market Volume, accessed 2025](https://www.fortunebusinessinsights.com/server-operating-system-market-106601)
 
@@ -105,9 +106,9 @@ Nowadays there are millions using the GNU operating system, but most of them don
 
 ### Digital technology against freedom
 
-Without a free operating system, it's impossible to have freedom (see [Section: Digital society](#digital-society)). And by free software, the Free Software movement, means software that respects users' freedom. Ultimately there are just two possibilities with software: 1) either the users control the program or 2) someone else controls the program (and through it has power over the users). A nonfree program is an instrument of unjust power that nobody should ever have. [^philo]
+Without a free operating system, it's impossible to have freedom (see [Section: Digital society](#digital-society)), and by free software the Free Software movement means software that respects users' freedom.
 
-The developer who has control of the program often feels tempted to introduce malicious features to further exploit or abuse the users. There are many ways in which our freedom is being attacked by digital technology. [^philo]
+A developer who has complete control of a program often feels tempted to introduce malicious features to further exploit or abuse the users. There are many ways in which this can happen. Following, a few of the ways our freedom is being attacked by digital technology are listed. [^philo]
 
 #### Addictive by design
 
