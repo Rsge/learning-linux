@@ -100,58 +100,87 @@ The supercomputer field is completely dominated by GNU/Linux. All 500 of the fas
 
 ## 1.6 Philosophy of the GNU project
 
-Nowadays there are millions using the GNU operating system, but most of them don't know they are using GNU. People call the system Linux. This is a widespread practice which is not nice. Since the Free Software movement wrote the biggest parts of the code, one should give them atleast equal mention, and call the system *GNU+Linux* or *GNU/Linux*. But there is another reason to do this. The reason for developing GNU was unique. GNU is the only operating system developed for the purpose of freedom. Not for technical motivations. Not for commercial motivations. GNU was written for your freedom. A finnish programmer Linus Torvalds, the person who wrote the kernel component for the GNU project (called Linux) doesn't agree with the Free Software movement. He does not state that people deserve freedom. He says he likes convenient, reliable, powerful software and tells people that those are the important values. [^philo]
+Nowadays, there are millions using a GNU/Linux operating system, but most of them don't know they are using GNU software. People call the whole system "Linux", despite Linux being only the system kernel written by Linus Torvalds and most other parts being GNU software by the GNU Project. This is a widespread practice, but unfair to the GNU Project, who wrote the greater share of the OSs' parts. Thus, one should give them at least an equal mention and call the system *GNU/Linux* or *GNU+Linux*. [^gnulinux]
+
+[^gnulinux]: [GNU/Linux FAQ, updated 2020](https://www.gnu.org/gnu/gnu-linux-faq.html.en)
+
+But there is another reason to do this: The Free Software ideology. The reason for developing GNU was unique. GNU is the only operating system developed for the purpose of freedom. Not for technical motivations. Not for commercial motivations. GNU was written for your freedom. Linus Torvalds doesn't agree with the Free Software movement. He does not state that people deserve freedom, instead he says he likes convenient, reliable, powerful software and tells people that those are the important values. So calling the system *GNU/Linux* <small>(or *GNU+Linux*)</small> explicitly can be an expression of one subscribing to the ideology of the Free Software movement. [^philo]
 
 [^philo]: [Philosophy of the GNU Project, updated 2022](https://www.gnu.org/philosophy/)
 
 ### Digital technology against freedom
 
 Without a free operating system, it's impossible to have freedom (see [Section: Digital society](#digital-society)), and by free software the Free Software movement means software that respects users' freedom.
+So *free* as in "free speech", not "free beer". Sometimes, because of this confusion, the French or Spanish word *libre* is used, meaning "free" as in freedom. [^philoFree]
+
+[^philoFree]: [What is Free Software?, updated 2019](https://www.gnu.org/philosophy/free-sw.en.html)
+
+Ultimately, there are just two possibilities with software: 1) Either the users control the program or 2) someone else controls the program (and through it has power over the users). A nonfree program is an instrument of unjust power that nobody should ever have. [^philo]
 
 A developer who has complete control of a program often feels tempted to introduce malicious features to further exploit or abuse the users. There are many ways in which this can happen. Following, a few of the ways our freedom is being attacked by digital technology are listed. [^philo]
 
 #### Addictive by design
 
-Functionalities added for the sole purpose of luring users into frequent and intensive use of the program, with the goal of causing [addiction](https://www.gnu.org/proprietary/proprietary-addictions.html) and spending more and more money.
+Functionalities are added for the sole purpose of luring users into frequent and intensive use of the program, with the goal of causing addiction and spending more and more money.[^propAddict]
+
+[^propAddict]: [Proprietary Addictions, updated 2025](https://www.gnu.org/proprietary/proprietary-addictions.html)
 
 #### Deliberate incompatibility
 
-[Deliberate incompatibility](https://www.gnu.org/proprietary/proprietary-incompatibility.html) comes in many forms such as forcing users to buy a new version of the program after a Windows major version upgrade, or blocking users from switching to any other program by use of secret formats and protocols.
+The program is made so that users can only use the software with certain proprietary hardware, file formats, etc. Old versions of the software become incompatible with new hardware/formats so that users have to buy the new version of the program to continue using it. Standards of formats, protocols etc. are kept secret so switching to a different program is hard or even impossible. [^propDelibIncompat]
+
+[^propDelibIncompat]: [Proprietary Incompatibility, updated 2024](https://www.gnu.org/proprietary/proprietary-incompatibility.html)
 
 #### Crippled by design
 
-[Proprietary jail](https://www.gnu.org/proprietary/proprietary-jails.html) is an operating system designed to impose censorship of which applications the user can install.
+This can manifest in several ways:
 
-DRM means functionalities designed intentionally to [restrict](https://www.gnu.org/proprietary/proprietary-drm.html) what users can do such as playing a bluray disc.
+* A proprietary jail is an operating system designed to impose censorship of which applications the user can install. [^propJail]
 
-[Tyrant](https://www.gnu.org/proprietary/proprietary-tyrants.html) is a malicious device that prevents users from installing a different or modified operating system. These devices have measures to block execution of anything other than the approved system.
+[^propJail]: [Proprietary Jails, updated 2025](https://www.gnu.org/proprietary/proprietary-jails.html)
+
+* DRM means functionalities designed intentionally to restrict what users can do, such as playing a Blu-ray disc. [^propDRM]
+
+[^propDRM]: [Proprietary DRM, updated 2025](https://www.gnu.org/proprietary/proprietary-drm.html)
+
+* A tyrant is a malicious device that prevents users from installing a different or modified operating system. These devices have measures to block execution of anything other than the approved system. [^propTyrant]
+
+[^propTyrant]: [Proprietary Tyrants, updated 2025](https://www.gnu.org/proprietary/proprietary-tyrants.html)
 
 #### Designed to force approval
 
-[Harassing](https://www.gnu.org/proprietary/proprietary-interference.html) comes in many forms such as annoying the users to switch their web browser.
+This takes the form of harassing the user on many occasions to give up freedom in exchange for time saved or notifications not shown, such as annoying users to switch their web browser each time a website is opened. [^propHarrass]
+
+[^propHarass]: [Proprietary Interference, updated 2025](https://www.gnu.org/proprietary/proprietary-interference.html)
 
 #### Designed to listen for remote commands
 
-[Back doors](https://www.gnu.org/proprietary/proprietary-back-doors.html) listen for remote commands to mistreat the user.
+Proprietary software often has back doors to listen for remote commands to mistreat the user, such as listening to conversations or force firmware updates which extend their control. [^propBD]
+
+[^propBD]: [Proprietary Back Doors, updated 2025](https://www.gnu.org/proprietary/proprietary-back-doors.html)
 
 #### Designed to be server dependent
 
-[Tethering](https://www.gnu.org/proprietary/proprietary-tethers.html) a product or program means designing it to work only by communicating with a specific server. In some cases, tethering is used to do specific nasty things to the users. Tethers also contain a time bomb, since it means you can't use the program when the server get shutdown eventually.
+Designing a program or product so that it can only work by communicating with a specific server is called tethering. In some cases, tethering is used to do specific nasty things to the users, such as forcing to agree to giving up privacy rights by connecting. Tethers also contain a time bomb, since it means one can't use the program when the server gets shut down eventually. [^propTether]
+
+[^propTether]: [Proprietary Tethers, updated 2025](https://www.gnu.org/proprietary/proprietary-tethers.html)
 
 #### Designed to monitor the user
 
-[Surveillance](https://www.gnu.org/philosophy/free-digital-society.en.html#surveillance) means snooping and tracking users. Computers are ideal for any tyrant who wants to crush opposition. They are ideal for surveillance. Anything we do with computers, the computers can record. They can record the information in a perfectly indexed searchable form in a central database. Computerized surveillance makes it possible to centralize and index all this information so that an unjust regime can find it all, and find out all about everyone. If a dictator takes power, which could happen anywhere, people realize this and they recognize that they should not communicate with other dissidents in a way that the state could find out about. But if the dictator has several years of stored records of who talks with whom, it's too late to take any precautions. He already has everything he needs to realize: *OK, this guy is a dissident, and he spoke with him. Maybe he is a dissident too. Maybe we should grab him and torture him.* [^philo]
+Most proprietory programs are made to track their users in some shape or form. This leads to computers being ideal for any tyrant; they are ideal for surveillance. Computers can record anything one does with them. They can record any information in a perfectly indexed searchable form in a central database. Computerized surveillance makes it possible to use this power so an unjust regime could find out everything about anyone. If a dictator takes power, which could happen anywhere, people will realize this and know they shouldn't communicate with other dissidents in a way the state could find out about. But if the dictator has, for example, several years of stored records of who spoke with whom about what, it's too late to take any precautions – they already have everything they need to find out who will accept the rule and who could be a dissdent, who may need "disciplinary actions". <!--Ooh boy, that *still* escalated quickly...-->[^philoSurvei]
+
+[^philoSurvei]: [A Free Digital Society - What Makes Digital Inclusion Good or Bad?, updated 2021](https://www.gnu.org/philosophy/free-digital-society.en.html#surveillance)
 
 ### Digital society
 
 It is not true to assume that participating in a digital society is good. Being in a digital society can be good or bad, depending on whether that digital society is just or unjust. [^philo]
 
-People should campaign to put an end to digital surveillance. One can't wait until there is a dictator and it would really matter. And besides, it doesn't take an outright dictatorship to start attacking human rights. Today we see censorship imposed in countries that are not normally thought of as dictatorships, such as UK, France, Spain, Italy, Denmark. Censorship is not new, it existed long before computers. But 20 years ago, we thought that the Internet would protect us from censorship, that it would defeat censorship. Then the opposite happened. Goverments have went to great lengths to impose censorship on the Internet. We must recognize that a country that imposes censorship on the Internet is not a free country. And is not a legitimate government either. [^philo]
+People should campaign to put an end to digital surveillance. One can not <!--With "can't" it sounds like one would be happy when a dictator *finally* comes. Like: "I can't *wait* to open the next door on my advent calender!"--> wait until there is a dictator and it would really matter. Besides, it doesn't take an outright dictatorship to start attacking human rights. Today we see censorship imposed in countries that are not normally thought of as dictatorships, such as the UK, France, Spain, Italy, and Denmark. Censorship is not new, it existed long before computers. But 20 years ago, we thought that the internet would protect us from censorship, that it would defeat censorship. Then, the opposite happened. Goverments have gone to great lengths to impose censorship on the internet. We must recognize that a country that imposes censorship on the internet is not a completely free country. <!--And is not a legitimate government either. | No. Just no. If a government is democratically elected (without reason to doubt the legitimacy of the votes), it's legit. You may disagree with what they do in the end, but such is the nature of democracy. What they do might even be illegal, but that doesn't make the government *itself* not legit, just their actions. In a good democracy, the judicative and executive powers will take care of this part. A government itself is only "not legit" if it *came to power* by unlawful means, e.g. violence, extorcion or corruption.--> [^philo]
 
 > [!IMPORTANT]
-> If we have an unjust digital society, we should cancel these projects for digital inclusion and launch projects for digital extraction. [^philo]
+> If we have an unjust digital society, we should cancel projects for digital inclusion and instead launch projects for digital extraction. We have to extract people from digital society if it doesn't respect their freedom, or we have to make it respect their freedom. <!--Without the second sentence as additional context, the meaning of the first at this part of the book is, at least to me, very hard to grasp--> [^philo]
 
-The most important point about free software is that schools should teach exclusively free software. There should be nothing proprietary in the education. Proprietary developers offer gratis copies to schools, because they want schools to make children dependent. The idea is to direct students down the path of permanent dependence. To teach people the use of proprietary software, is to teach **dependence** (i.e. the state of needing the help and support of somebody or something in order to survive or be successful). Schools should never do that because it's the opposite of their mission. Some people say: *Let's have the school teach both proprietary software and free software, so the students become familiar with both.* But that's like saying the schools are supposed to teach both good habits and bad ones. [^philo]
+The most important point about free software is that schools should teach exclusively with and about free software. There should be nothing proprietary in the education. Proprietary developers offer gratis copies to schools, because they want schools to make children dependent. The idea is to direct students down the path of permanent dependence. To teach people the use of proprietary software, is to teach **dependence**. Schools should never do this because it's the opposite of their mission. Some people say: *Let's have the school teach both proprietary software and free software, so the students become familiar with both.* But that's like saying the schools are supposed to teach both good habits and bad ones. [^philo]
 
 <a id="the-birth"></a>
 
