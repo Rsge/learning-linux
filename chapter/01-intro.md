@@ -90,11 +90,11 @@ Unices emerged from a 1960's to 1970's model of computing called **time-sharing*
 [^wikitime]: [Wikipedia - Time-sharing, accessed 2021](https://en.wikipedia.org/wiki/Time-sharing)
 
 The internet brought the general concept of time-sharing back into popularity. Expensive corporate server farms costing millions can host thousands of customers all sharing the same common resources. As with the early serial terminals, websites operate primarily in bursts of activity followed by periods of idle time. This bursting nature permits the service to be used by many customers at once, usually with no perceptible communication delays. [^wikitime] For public internet servers, the GNU/Linux family is generally counted as dominant (with a 65 % market share), powering well over twice the number of hosts as Windows Server (with a 25 % market share). [^server-marketshare]
-The supercomputer field is completely dominated by GNU/Linux. All 500 of the fastest supercomputers in the world run GNU/Linux. [^top500]
+The supercomputer field is completely dominated by GNU/Linux. All 500 of the fastest supercomputers in the world run GNU/Linux – and it has been this way since Nov. 2017! [^top500]
 
 [^server-marketshare]: [Fortune Business Insights - Server Operating System Market Volume, accessed 2025](https://www.fortunebusinessinsights.com/server-operating-system-market-106601)
 
-[^top500]: [Top500.org - List Statistics by Operating system Family, accessed 2025](https://www.top500.org/statistics/list/)
+[^top500]: [Top500.org - Statistics over time by operating system family, accessed 2025](https://www.top500.org/statistics/overtime/)
 
 <a id="philosophy-of-the-gnu-project"></a>
 
