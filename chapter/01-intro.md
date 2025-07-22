@@ -244,15 +244,23 @@ Another important part of a GNU/Linux operating system is a **shell** (such as b
 
 The shell provides some basic [built-in commands](03-basic-terminal.md#shell-builtin-commands), but most of the shell commands in use are not built into the shell. Many **vital shell utilities** such as copy ` $ cp `, remove ` $ rm ` and list ` $ ls ` come as part of the [GNU Core Utilities package](https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands). A GNU/Linux system would not function without these critical utilities.
 
-### Graphical server
+### Base systems of the graphical user interface
 
-The graphical system is run by a **graphical server** (typically X.Org, Mutter, or KWin), which interfaces with your video card, monitor, mouse, and other devices. The graphical server does not provide the full desktop environment, just a graphical system that desktop environments and toolkits can build on top of.
+The graphical user interface is run using a **display protocol**. The two main ones are the "old and reliable" **X11** and the newer **Wayland**, which still has a few smaller issues, but is by now becoming the new standard. When using X11, a **display server** is also needed, with X.Org being the reference implementation, but other implementations exist, such as TinyX for embedded systems.
 
-> **Wayland** and **X11** are display server protocol standards.
+The actual windows on the screen are managed by something called a **window manager** for X11 or a **Wayland compositor** for Wayland. This is, in short, because for Wayland, the jobs of the display server and the window manager are done by the same program. Most desktop environments have their own versions of these named the same between X11 and Wayland. Examples are KWin (for KDE Plasma), Mutter (for Gnome), Muffin (for Cinnamon), Hyprland, or Weston.
+
+There are **three types** of window managers / Wayland compositors:
+* **Stacking:** These provide the "default" experience of windows that can be "stacked" on a desktop as e.g. in MS Windows. They can be used with the mouse and the keyboard.
+* **Tiling:** This means no windows overlap and each new window’s position as well as size changes in other open windows are automatically done according to set rules. These are primarily used with the keyboard.
+* **Dynamic:** These allow switching between stacking and tiling.
+
+These systems don’t provide the full desktop environment, just a basis for the graphical user interface that desktop environments and toolkits can build on top of. Though some tiling systems don’t necessarily need a desktop environment to be used.
+
+> [!NOTE]
+> **Weston** was the reference implementation of a compositor for Wayland, but isn’t anymore, because of emerging feature differences. It doesn’t exist for X11.
 >
-> **X.Org** is the most widely used server compositor that implements X11. Over time there have been other implementations such as TinyX for embedded systems.
->
-> **Weston** is an reference server compositor that implements Wayland. However various desktop environments have their own Wayland-based compositors instead of using Weston, such as GNOME has **Mutter**, and KDE Plasma has **KWin**.
+> **Hyprland** is a tiling Wayland compositor <small>(well, [technically](https://xkcd.com/1475/) a dynamic one)</small> and also isn’t available for X11.
 
 ### Widget toolkit
 
