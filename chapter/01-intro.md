@@ -19,7 +19,7 @@ Knowing about the past helps to understand how things are today. So let's start 
 
 ## 1.1 Branching
 
-In 1983, American programmer and human rights activist Richard Stallman launched the [Free Software movement](https://www.fsf.org) with a plan to develop a complete free operating system named GNU. It was not designed from scratch but as a free clone of an existing but proprietary operating system called Unix. GNU had the same commands and system calls as Unix, and all parts of GNU were made compatible with the original Unix variants so that people who used Unix would be able to switch with ease.
+In 1983, American programmer and human rights activist Richard Stallman launched the [Free Software movement](https://www.fsf.org) with a plan to develop a complete free operating system named GNU. It was not designed from scratch but as a free clone of an existing but proprietary operating system called Unix. GNU had the same commands and system calls as Unix, and all parts of GNU were made compatible with the original Unix variants so that people who used Unix would be able to switch with ease. But they were *written* from scratch without using Unix code. For this reason, these systems are categorized as "Unix-like".
 
 > The name **GNU** was influenced by a tradition popular at the time: If there was an existing program, and you wrote something similar to it or inspired by it, you could give credit by giving your program a name saying it is not the other one (i.e. a recursive acronym). So Stallman gave credit to Unix for the technical ideas with the name GNU, a recursive acronym for *GNU is Not Unix*.
 
