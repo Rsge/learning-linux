@@ -207,7 +207,7 @@ Early versions of Linux had been released under a license written by Torvalds hi
 
 ## 1.8 Linux distros aren’t just the kernel
 
-While most people simply call it "Linux", a full GNU/Linux distribution includes far more than just the kernel. Behind the scenes, each distro bundles together a lot of essential components. To name a few: A bootloader that loads the main GNU/Linux system (e.g. systemd-boot or GRUB), a command shell (e.g. Bash), shell utilities such as ls, mkdir, and echo, background services (called daemons), a display protocol to manage display output (X.org or Wayland), a window manager / compositor to manage, well, windows (e.g. KWin, Mutter, Muffin, or Hyprland) a desktop environment (e.g. KDE Plasma, Gnome, or Cinnamon), a software package management tool (e.g. apt, pacman, or yum), and many more. In short, the "Linux" you use is really a well-orchestrated ensemble of software working in harmony. [^8pieces]
+While most people simply call it "Linux", a full GNU/Linux distribution includes far more than just the kernel. Behind the scenes, each distro bundles together a lot of essential components. To name a few: A bootloader that loads the main GNU/Linux system (e.g. systemd-boot or GRUB), a command shell (e.g. Bash), shell utilities such as ls, mkdir, and echo, background services (called daemons), a display protocol to manage display output (X11 or Wayland), a diplay server for X11 (e.g. X.Org), a window manager / Wayland compositor to manage, well, windows (e.g. KWin, Mutter, Muffin, or Hyprland) a desktop environment (e.g. KDE Plasma, Gnome, or Cinnamon), a software package management tool (e.g. apt, pacman, or yum), and many more. A few of these parts will be explained in a bit more detail in this chapter, but in short, the "Linux" you use is really a well-orchestrated ensemble of software working in harmony. [^8pieces]
 
 <!--The general populace has gravitated to the name Linux and this name has largely stuck. However Linux distributions are not just the Linux kernel. They all contain other critical software such as a bootloader (systemd-boot or grub), a shell (such as bash), shell utilities (such as ls, mkdir, echo), daemons (i.e. background processes), a graphical server (such as x.org, mutter, kwin), a desktop environment (such as budgie, gnome, kde, unity) and more. [^8pieces]-->
 
@@ -221,18 +221,20 @@ All these different programs are developed by different, independent development
 
 The first program to open with any operating system is the *UEFI/BIOS first stage boot loader* on the motherboard. The **second stage boot loaders** are NTLDR for the Windows operating system and e.g. GRUB or systemd-boot for the GNU/Linux operating system. Most GNU/Linux boot loaders can also load Windows if dual-booting is set up.
 
-These first and second stage boot loaders may work very quickly, but they still exist and are therefore worth mentioning.
+These first and second stage boot loaders may work very quickly, but they still exist and are important for dual booting, and therefore worth mentioning.
 
 ### Kernel
 
-The second stage boot loader starts the kernel of the operating system. This is the part of the system that’s actually called Linux. The **kernel** is the core of the system that speaks directly to the hardware. It manages your CPU, memory, and input/output devices such as keyboard, mouse, and display. All other software runs above the kernel. The kernel is the lowest-level piece of software, which interfaces with the hardware. It provides a layer of abstraction above the hardware, dealing with all the different hardware quirks so the rest of the system can care about them as little as possible. [^8pieces]
+The second stage boot loader starts the kernel of the operating system. This is the part of the system that’s actually called "Linux". The **kernel** is the core of the system, the lowest-level piece of software. It interfaces directly with the hardware, managing CPU, memory, and input/output devices such as keyboard, mouse, and display. It provides a layer of abstraction to the hardware, dealing with all the different hardware quirks, so the rest of the system can care about them as little as possible. All other software then runs "above" the kernel, using it to manage resource allocation. [^8pieces]
 
 > [!NOTE]
-> The Linux kernel is the operating system’s core, developed by the Finnish programmer Linus Torvalds (**kernel** = the inner part of a nut or seed or the central, most important part of an idea or a subject). <!--In everyday language, Linux has become the name for an operating system family built around the Linux kernel. Officially, we are talking about Unix-like GNU/Linux desktop distributions, which form a complete operating system with desktop environments and application libraries, and not just the operating system kernel.-->
+> **Kernel** means the inner part of a nut or seed or the central, most important part of an idea or a subject.
+<!-- > The Linux kernel is the operating system’s core, developed by the Finnish programmer Linus Torvalds. () 
+> In everyday language, Linux has become the name for an operating system family built around the Linux kernel. Officially, we are talking about Unix-like GNU/Linux desktop distributions, which form a complete operating system with desktop environments and application libraries, and not just the operating system kernel.-->
 
 ### Background processes
 
-**Background processes** are the next pieces of software loaded after the kernel. This happens before you see the graphical login screen. Windows refers to such processes as services, while Unix-like systems refer to them as daemons. Daemons are system-level processes you generally do not notice. For example ` $ crond ` manages scheduled tasks and ` $ syslogd ` manages system log. The letter d at the end stands for daemon. [^8pieces]
+**Background processes** are the next pieces of software loaded after the kernel. This happens before you see the graphical login screen. Windows refers to such processes as "services", while Unix-like systems refer to them as "daemons". Daemons are system-level processes you generally do not notice. For example ` $ crond ` manages scheduled tasks and ` $ syslogd ` manages system log. The letter d at the end stands for "daemon". [^8pieces]
 
 ### Shell
 
@@ -244,7 +246,7 @@ The shell provides some basic [built-in commands](03-basic-terminal.md#shell-bui
 
 ### Graphical server
 
-The graphical system is run by a **graphical server** (typically X.Org, Mutter, KWin), which interfaces with your video card, monitor, mouse, and other devices. The graphical server does not provide the full desktop environment, just a graphical system that desktop environments and toolkits can build on top of.
+The graphical system is run by a **graphical server** (typically X.Org, Mutter, or KWin), which interfaces with your video card, monitor, mouse, and other devices. The graphical server does not provide the full desktop environment, just a graphical system that desktop environments and toolkits can build on top of.
 
 > **Wayland** and **X11** are display server protocol standards.
 >
@@ -254,23 +256,23 @@ The graphical system is run by a **graphical server** (typically X.Org, Mutter, 
 
 ### Widget toolkit
 
-A **widget toolkit** (such as GTK and Qt) provides elements such as buttons and drop-down menus for creating graphical user interfaces. The choice of toolkit is usually a decision for the software developer, but in some cases you will see support for several alternative toolkits built into a software application.
+A **widget toolkit** (such as GTK or Qt) provides elements such as buttons and drop-down menus for creating graphical user interfaces. The choice of toolkit is usually a decision made by software developers, but in some cases you will see support for several alternative toolkits built into a software.
 
 ### Desktop environment
 
-A **desktop environment** (such as Budgie, GNOME, KDE Plasma, Xfce) provides the computer user with a graphical user interface with a desktop at the bottom and various documents on top, as the metaphor suggests. The aim is to provide an instinctive way of using the computer as if it were a physical desktop.
+A **desktop environment** (such as KDE Plasma, Gnome, Cinnamon, or Xfce) provides the computer user with a graphical user interface with a "desk-top" at the bottom and various documents on top, as the metaphor suggests. The aim is to provide an instinctive way of using the computer as if it were a physical desktop.
 
-In some cases, the desktop environment can be switched each time the user logs on to the system. This is because the **login menu** is also a sub-program (such as ` $ slick-greeter ` or ` $ lightdm-gtk-greeter `).
+In some cases, each time a user logs on to the system, they can switch their desktop environment if they like. This is because the **login menu** is also a sub-program (such as ` $ slick-greeter ` or ` $ lightdm-gtk-greeter `), which can start different installed desktop environments as needed.
 
-Desktop environments typically include their own set of **utility programs**, which are built to fit the desktop environment as a whole. For example, GNOME includes the ` $ nautilus ` file manager developed as part of GNOME, KDE Plasma includes the ` $ dolphin ` file manager developed as part of the KDE project, and Linux Mint Cinnamon includes the ` $ nemo ` file manager developed as part of Linux Mint. Many of these applications have a good reputation and can be used in other desktop environments.
+Desktop environments typically include their own set of **utility programs**, which are built to fit the desktop environment as a whole. For example, KDE Plasma includes the ` $ dolphin ` file manager developed as part of the KDE project, GNOME includes the ` $ nautilus ` file manager developed as part of GNOME, and Linux Mint Cinnamon includes the ` $ nemo ` file manager developed as part of Linux Mint. Many of these applications have a good reputation and can be used in other desktop environments.
 
 ### System installer
 
-The **system installer** that walks through installing the system in a clear and guided way.
+The **system installer** is the setup that walks a user through installing the system in an intuitive, guided way.
 
 ### Package manager
 
-The **package manager** (such as apt, rpm, dpkg, yum, pacman, eopkg) helps you install, remove, and update software. Instead of manually downloading apps, it connects to trusted sources online to manage a majority of the software on your GNU/Linux system, with little effort. See [Chapter 4, Section: Package management](04-installing.md#package-management)
+The **package manager** (such as apt, pacman, or yum) helps you install, remove, and update software. Instead of manually downloading apps like Windows user are used to, <!-- because who t.f. would ever use the Microsoft store if they can avoid it, right?--> it connects to trusted sources online to manage a majority of the software on your GNU/Linux system, with little effort. See [Chapter 4, Section: Package management](04-installing.md#package-management)
 
 ### Additional applications
 
