@@ -291,26 +291,24 @@ While some software is tightly integrated into the system and desktop environmen
 
 <a id="gnu-gpl"></a>
 
-## 1.9 GNU General Public -license
+## 1.9 GNU General Public License
 
-Free software and open source software are not the same thing and are not mutually exclusive. Free software uses its own licenses. The Free Software Foundation encourages you to use the established and good [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html), instead of creating your own license. And it has become one of the most popular free software distribution licenses.
+Free software and open source software are not the same thing and are not mutually exclusive. Free software uses its own licenses. The Free Software Foundation encourages you to use the established [GNU General Public License](https://www.gnu.org/licenses/licenses.html#GPL), instead of creating your own license. The founder of the Free Software Movement, Richard Stallman,  wrote the GNU GPL (with his lawyers), which implements "copyleft". It has become one of the most popular free software distribution licenses.
 
-Richard Stallman, the founder of the Free Software Movement:
-1. Invented the concept of copyleft: Change and redistribute but don't strip off this freedom.
-2. And wrote (with lawyers) the GNU GPL, which implements copyleft.
+**Copyleft** means that anyone who redistributes a free software protected by it, with or without changes, must pass along this freedom to any copies. Copyleft guarantees that every user has freedom. To copyleft a software, one first has to state that it is copyrighted (in some countries). Then one adds distribution terms, which are a legal instrument that gives everyone the rights to use, modify, and redistribute the software's code, or any software derived from it, but only if the distribution terms are unchanged. Thus, the code and it’s freedom become legally inseparable. [^copyleft]
 
-**Copyleft** says that anyone who redistributes the software, with or without changes, must pass along the freedom to further copy and change it. Copyleft guarantees that every user has freedom. To copyleft a program, one first state that it is copyrighted. Then one adds distribution terms, which are a legal instrument that gives everyone the rights to use, modify, and redistribute the program's code, or any program derived from it, but only if the distribution terms are unchanged. Thus, the code and the freedoms become legally inseparable.
+[^copyleft]: [GNU - What is Copyleft?, accessed 2025](https://www.gnu.org/licenses/copyleft.html.en)
 
-Proprietary software developers use copyright to take away the users' freedom. The Free Software movement use copyright to guarantee freedom. That's why they reversed the name, changing copy*right* into copy*left*. The *left* in copyleft is not a reference to the verb leave; only to the direction which is the mirror image of right.
+Proprietary software developers use copyright to take away the users' freedom. The Free Software movement uses copyright to guarantee it. That's why they reversed the name, changing copy*right* into copy*left*. The *left* in copyleft is just a reference to the direction which is the mirror image of right, nothing more. [^copyleft]
 
 > [!NOTE]
-> Once software is licensed under the GNU GPL, a commercial operator cannot, for example, buy it to stop the development, to exclude a competitor.
+> Once software is licensed under the GNU GPL, a commercial operator cannot, for example, buy it to exclude a competitor.
 
 <a id="unix-or-unix-like"></a>
 
 ## 1.10 UNIX or Unix-like
 
-It is conceivable that Unix is a plural word, referring to its numerous implementations. Unix is a set of operating systems of the same type (but not exactly the same). The family of unices (the multitasking, multiuser computer operating systems) derive from the original AT&T Unix development starting in the United States of America, in the 1970's at Bell Labs research center. It was initially intended for use inside the Bell System. AT&T licensed Unix to outside parties in the late 1970's, leading to a variety of both academic and commercial Unix variants from vendors including University of California, Berkeley (BSD), Microsoft (Xenix), IBM (AIX), and Sun Microsystems (Solaris). [^wiki-uni]
+It is conceivable that Unix is a plural word, referring to its numerous implementations. Unix is a set of operating systems of the same type (but not exactly the same). The family of unices (the multitasking, multiuser computer operating systems) derive from the original AT&T Unix, which’s development started in the 1970s at the Bell Labs research center in the U.S. It was initially intended for use inside the Bell System. AT&T licensed Unix to outside parties in the late 1970's, leading to a variety of both academic and commercial Unix variants from vendors including the University of California, Berkeley (BSD), Microsoft (Xenix), IBM (AIX), and Sun Microsystems (Solaris). [^wiki-uni]
 
 [^wiki-uni]: [Wikipedia - Unix, accessed 2021](https://en.wikipedia.org/wiki/Unix)
 
@@ -320,13 +318,7 @@ GNU/Linux system developers generally aim for compliance with [POSIX / IEEE 1000
 
 **Linux®** is a registered trademark of Linus Torvalds.
 
-While the software used in a GNU/Linux distribution may be run on genuine certified Unix, the GNU/Linux distributions are said to be "only" like Unix. Certification from the trademark owner would cost money, and would be contrary to the nature of free software.
-
-### Android
-
-**Android®** is a trademark of Google LLC.
-
-Google's Android operating system is based on the Linux kernel, for smartphones and tablets, but it is not Unix-like. Linux makes up the core part of Android, but Google has not added all the typical software and libraries (see [Section: Linux distros aren’t just the kernel](#ensemble)) you’d find on a Linux distribution like Ubuntu. <!--Android does not include an X server (like Xorg), so--> You cannot run standard graphical GNU/Linux applications on Android.
+While the software used in a GNU/Linux distribution may be run on genuine certified Unix, the GNU/Linux distributions are said to be "only" *like* Unix. Certification from the trademark owner would cost money, and would be contrary to the nature of free software.
 
 ### UNIX
 
@@ -334,15 +326,21 @@ Google's Android operating system is based on the Linux kernel, for smartphones 
 
 The following operating systems are UNIX® certified: macOS (BSD), AIX (System V), Solaris (System V), HP-UX (System V), EulerOS (GNU/Linux), Inspur K-UX (GNU/Linux); Although some have expired and not renewed their license.
 
+### Android
+
+**Android®** is a trademark of Google LLC.
+
+Google's Android operating system is based on the Linux kernel, for smartphones and tablets, but it is not Unix-like. Linux makes up the core part of Android, but Google has not added all the typical software and libraries (see [Section: Linux distros aren’t just the kernel](#ensemble)) you’d find on a Linux distribution like Ubuntu. <!--Android does not include an X server (like Xorg), so--> You cannot run standard graphical GNU/Linux applications on Android.
+
 ### macOS
 
 **macOS®** is a registered trademark of Apple Inc.
 
-MacOS is a UNIX 03 registered product and conforms to the Single UNIX 03 specification (full compliance). However macOS (previously known as OS X) is actually based on open source projects and a descendant of the BSD family. It’s a bit different from other BSDs. While the low-level kernel and other software is open source BSD code, most of the rest of the operating system is closed-source macOS code. Apple built macOS (and iOS) on top of BSD so they would not have to write the low-level operating system themselves (just as Google built Android on top of the Linux-kernel).
+MacOS is a UNIX 03 registered product and conforms to the Single UNIX 03 specification (full compliance). However macOS (previously known as OS X) is actually based on open source projects and a descendant of the BSD family. It’s a bit different from other BSDs, though. While the low-level kernel and other software is open source BSD code, most of the rest of the operating system is closed-source macOS code. Apple built macOS (and iOS) on top of BSD so they would not have to write the low-level operating system themselves (just as Google built Android on top of the Linux-kernel).
 
 <!-- MacOS has a very strong unifying idea that is very different from Unix's: *The Mac Interface Guidelines*. These specify in great detail what an application should look like and how it should behave. -->
 
-MacOS has a very strict set of interface rules, very different from Unix's. Apple's interface guidelines have of course evolved over the years, from the 1992 booklet [Macintosh Human Interface Guidelines](http://interface.free.fr/Archives/Apple_HIGuidelines.pdf) to the up-to-date online [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines). However, a very strong unifying idea is that developers can only create applications that are aligned with Apple's design philosophy. And an app that deviates from them is effectively not allowed to be sold on Apple's app stores [^ei-saa-kauppaan]. The guidelines define in great detail what an app should look like and how it should behave. The guidelines cover such things as layout, typography, colour scheme, navigation and user interaction.
+MacOS has a very strict set of interface rules, very different from Unix's. Apple's interface guidelines have of course evolved over the years, from the 1992 booklet [Macintosh Human Interface Guidelines](http://interface.free.fr/Archives/Apple_HIGuidelines.pdf) to the up-to-date online [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines). However, a very strong unifying idea is that developers can only create applications that are aligned with Apple's design philosophy – and an app that deviates from them is effectively not allowed to be sold on Apple's app stores [^ei-saa-kauppaan]. The guidelines define in great detail what an app should look like and how it should behave. The guidelines cover such things as layout, typography, colour scheme, navigation and user interaction.
 
 [^ei-saa-kauppaan]: [Juha Metsäkallas - Otsikoimaton artikkeli, published 2019](https://finnababilejo.fi/artikolo/juha_metsakallas/2019/12/ja-muut-nappylat/)
 
