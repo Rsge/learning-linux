@@ -39,7 +39,7 @@ Unix has evolved to a whole family of operating systems called Unices. <!--This 
 <!--According to the OSF, open source shouldn't be hyphenated: [https://opensource.org/blog/is-open-source-ever-hyphenated]-->
 
 Both GNU/Linux and the BSDs are free and open source. They have more things in common than they do different, so one might wonder why they both exist? Mainly because of the philosophical differences about the way one should build an operating system and license it. And licensing is a significant difference:
-- **GNU/Linux systems use the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html):** If you modify any GNU component or the Linux kernel and want to distribute it, you have to release the source code and choose the same (or at least a similar) license for your modified software, too.
+- **GNU/Linux systems use the [GNU General Public License](https://www.gnu.org/licenses/licenses.html#GPL):** If you modify any GNU component or the Linux kernel and want to distribute it, you have to release the source code and choose the same (or at least a similar) license for your modified software, too.
 - **The BSDs use the [BSD license](https://en.wikipedia.org/wiki/BSD_licenses):** If you modify BSD and distribute it, you do not have to release the source code at all. You are free to do whatever you like with the BSD code. You can of course still release the source code if you wish, but you aren't obligated to do so. Manufacturers creating devices may choose BSD as a base for their operating system, instead of GNU/Linux, so they will not have to release the source code.
 
 <a id="quality-of-free-and-open source"></a>
