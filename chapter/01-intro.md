@@ -330,17 +330,17 @@ The following operating systems are UNIX® certified: macOS (BSD), AIX (System V
 
 **Android®** is a trademark of Google LLC.
 
-Google's Android operating system is based on the Linux kernel, for smartphones and tablets, but it is not Unix-like. Linux makes up the core part of Android, but Google has not added all the typical software and libraries (see [Section: Linux distros aren’t just the kernel](#ensemble)) you’d find on a Linux distribution like Ubuntu. <!--Android does not include an X server (like Xorg), so--> You cannot run standard graphical GNU/Linux applications on Android.
+Google's Android operating system is based on the Linux kernel, for smartphones and tablets, but it is not Unix-like. Linux makes up the core part of Android, but Google has not added all the typical software and libraries (see [Section: Linux distros aren’t just the kernel](#ensemble)) you’d find on a GNU/Linux distribution like Ubuntu. <!--Android does not include an X server (like Xorg), so--> You cannot run standard graphical GNU/Linux applications on Android.
 
 ### macOS
 
 **macOS®** is a registered trademark of Apple Inc.
 
-MacOS is a UNIX 03 registered product and conforms to the Single UNIX 03 specification (full compliance). However macOS (previously known as OS X) is actually based on open source projects and a descendant of the BSD family. It’s a bit different from other BSDs, though. While the low-level kernel and other software is open source BSD code, most of the rest of the operating system is closed-source macOS code. Apple built macOS (and iOS) on top of BSD so they would not have to write the low-level operating system themselves (just as Google built Android on top of the Linux-kernel).
+MacOS (previously known as OS X) is a UNIX 03 registered product and conforms to the Single UNIX 03 specification (full compliance). However macOS is actually based on open source projects and a descendant of the BSD family. It’s a bit different from other BSDs, though. While the low-level kernel and other software is open source BSD code, most of the rest of the operating system is closed-source macOS code. Apple built macOS (and iOS) on top of BSD so they would not have to write the low-level operating system themselves (just as Google built Android on top of the Linux-kernel).
 
 <!-- MacOS has a very strong unifying idea that is very different from Unix's: *The Mac Interface Guidelines*. These specify in great detail what an application should look like and how it should behave. -->
 
-MacOS has a very strict set of interface rules, very different from Unix's. Apple's interface guidelines have of course evolved over the years, from the 1992 booklet [Macintosh Human Interface Guidelines](http://interface.free.fr/Archives/Apple_HIGuidelines.pdf) to the up-to-date online [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines). However, a very strong unifying idea is that developers can only create applications that are aligned with Apple's design philosophy – and an app that deviates from them is effectively not allowed to be sold on Apple's app stores [^ei-saa-kauppaan]. The guidelines define in great detail what an app should look like and how it should behave. The guidelines cover such things as layout, typography, colour scheme, navigation and user interaction.
+MacOS has a very strict set of interface rules, very different from Unix's. Apple's interface guidelines have of course evolved over the years, from the 1992 booklet [Macintosh Human Interface Guidelines](http://interface.free.fr/Archives/Apple_HIGuidelines.pdf) to the up-to-date online [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines). However, a very strong unifying idea is that developers can only create applications that are aligned with Apple's design philosophy – and an app that deviates from them is effectively not allowed to be sold on Apple's app stores [^ei-saa-kauppaan]. The guidelines define in great detail what an app should look like and how it should behave. The guidelines cover such things as layout, typography, colour scheme, navigation, and user interaction.
 
 [^ei-saa-kauppaan]: [Juha Metsäkallas - Otsikoimaton artikkeli, published 2019](https://finnababilejo.fi/artikolo/juha_metsakallas/2019/12/ja-muut-nappylat/)
 
@@ -352,25 +352,27 @@ The Macintosh's unifying idea is so strong that all programs have a graphical us
 
 The Unix-like operating systems, running a Linux kernel, form a plethora of distributions. There are roughly 300 to 700 different GNU/Linux distributions (depending on the calculation method).
 
-Many distributions are derivations of an existing distribution. This is mainly because the major effort in creating a distribution is designing and creating a package management system, the default way for users to install and uninstall software from a software repository. This is no small undertaking. Even putting the software engineering aside, hosting a software repository takes time, effort, and expense. This leads to families or genealogies of distributions. [^apt-or-get] ![Linux Distributions Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+Most distributions are derivations of an existing distribution. This is mainly because the major effort in creating a distribution is designing and creating a package management system, the default way for users to install and uninstall software from a software repository. This is no small undertaking. Even putting the software engineering aside, hosting a software repository takes time, effort, and expense. This leads to families or genealogies of distributions. [^apt-or-get]
+
+![Linux Distributions Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
 [^apt-or-get]: [Dave McKay - Should you use apt or apt-get?, published 2023](https://www.howtogeek.com/791055/apt-vs-apt-get-whats-the-difference-on-linux/)
 
 The major branches of popular established GNU/Linux families are:
-1. Debian 1993
-    - Knoppix 2000
-    - Ubuntu 2004
-2. Slackware 1993
-    - SUSE 1994
-3. Red Hat 1994
-    - Mandrake 1998
-    - CentOS 2003
-    - Fedora 2003
-4. Gentoo 1999 (formerly Enoch)
-5. Arch 2002
+- Slackware (1993)
+    - SUSE (1994)
+- Debian (1993)
+    - Knoppix (2000)
+    - Ubuntu (2004)
+- Red Hat (1994)
+    - Mandriva (formerly Mandrake, 1998)
+    - Fedora (2003)
+    - CentOS (2003)
+- Gentoo (formerly Enoch, 1999)
+- Arch (2002)
 
 > [!NOTE]
-> It doesn't make things any easier for newcomers when there is so much choice. But newcomers can concentrate on a handful of disributions (see [Section: Suggested distributions](#suggested-distributions)).
+> It doesn't make things any easier for newcomers when there is so much choice. But newcomers can concentrate on choosing only from a handful of distributions (see [Section: Suggested distributions](#suggested-distributions)).
 
 <a id="the-cost-of-gnu-linux"></a>
 
