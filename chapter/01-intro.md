@@ -362,7 +362,6 @@ The major branches of popular established GNU/Linux families are:
 - Slackware (1993)
     - SUSE (1994)
 - Debian (1993)
-    - Knoppix (2000)
     - Ubuntu (2004)
 - Red Hat (1994)
     - Mandriva (formerly Mandrake, 1998)
